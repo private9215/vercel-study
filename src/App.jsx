@@ -16,7 +16,7 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>실행 환경: {import.meta.env.VITE_APP_ENV}</h1>
+          <h1>실행 환경(미리보기): {import.meta.env.VITE_APP_ENV}</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>

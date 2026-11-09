@@ -23,3 +23,22 @@ input::placeholder { color: #8b978f; }
 .next-step { font-size: 13px; color: #69766f; line-height: 1.7; margin: 20px 0; }
 footer { font-size: 12px; color: #78867c; }
 @media (max-width: 480px) { .auth-layout { padding: 24px 16px; } .auth-card { padding: 26px 22px; } h1 { font-size: 24px; } }
+
+.todo-card { max-width: 620px; }
+.todos { margin: 28px 0; border-top: 1px solid #e0e7e1; padding-top: 22px; }
+.todos-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.todos-heading h2 { margin: 0; font-size: 19px; }
+.text-button, .delete-button { border: 0; background: transparent; padding: 10px; border-radius: 8px; font-size: 13px; color: #38745b; }
+.todo-form { margin-top: 20px; }
+.todo-input-row { display: flex; gap: 8px; margin-top: 8px; }
+.todo-input-row input { min-width: 0; flex: 1; }
+.todo-input-row .primary { width: auto; margin: 0; flex-shrink: 0; }
+.todo-status, .todo-empty { color: #69766f; font-size: 13px; line-height: 1.7; }
+.todo-empty { padding: 24px 16px; background: #f3f6f3; text-align: center; border-radius: 10px; }
+.todo-list { list-style: none; padding: 0; margin: 0; }
+.todo-list li { display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #e0e7e1; padding: 12px 0; }
+.todo-check { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; cursor: pointer; }
+.todo-check input { width: 18px; height: 18px; flex-shrink: 0; accent-color: #21624a; }
+.todo-check span { overflow-wrap: anywhere; line-height: 1.6; }
+.is-complete .todo-check span { text-decoration: line-through; color: #78867c; }
+.delete-button { color: #9c3030; flex-shrink: 0; }

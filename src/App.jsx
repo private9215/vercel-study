@@ -12,11 +12,11 @@ export default function App() {
         <span className="brand-icon" aria-hidden="true">✓</span>
         오늘의 할 일
       </header>
-      <section className="auth-card" aria-labelledby={ready ? "auth-title" : undefined}>
+      <section className={`auth-card${session ? " todo-card" : ""}`} aria-labelledby={ready ? "auth-title" : undefined}>
         {!ready ? (
           <p role="status">로그인 상태를 확인하고 있어요…</p>
         ) : session ? (
-          <AccountCard user={session.user} />
+          <AccountCard key={session.user.id} user={session.user} />
         ) : (
           <AuthForm />
         )}
